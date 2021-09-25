@@ -45,28 +45,79 @@ class calculator implements ActionListener
                 t.setBounds(20,20,280,60);
                 t.setEditable(false);
                 t.setFont(fnt);
-                               
+                
+                b1.setBackground(Color.black);
+                b1.setForeground(Color.white);
                 b1.setFont(bt);
+                
+                b2.setBackground(Color.black);
+                b2.setForeground(Color.white);
                 b2.setFont(bt);
+                
+                b3.setBackground(Color.black);
+                b3.setForeground(Color.white);
                 b3.setFont(bt);
+                
+                b4.setBackground(Color.black);
+                b4.setForeground(Color.white);
                 b4.setFont(bt);
+                
+                b5.setBackground(Color.black);
+                b5.setForeground(Color.white);
                 b5.setFont(bt);
+                
+                b6.setBackground(Color.black);
+                b6.setForeground(Color.white);
                 b6.setFont(bt);
+                
+                b7.setBackground(Color.black);
+                b7.setForeground(Color.white);
                 b7.setFont(bt);
+                
+                b8.setBackground(Color.black);
+                b8.setForeground(Color.white);
                 b8.setFont(bt);
+                
+                b9.setBackground(Color.black);
+                b9.setForeground(Color.white);
                 b9.setFont(bt);
+                
+                b0.setBackground(Color.black);
+                b0.setForeground(Color.white);
                 b0.setFont(bt);
+                
+                bdec.setBackground(Color.black);
+                bdec.setForeground(Color.white);
                 bdec.setFont(opp);
+                
+                badd.setBackground(Color.black);
+                badd.setForeground(Color.white);
                 badd.setFont(opp);
+                
+                bsub.setBackground(Color.black);
+                bsub.setForeground(Color.white);
                 bsub.setFont(opp);
+                
+                bmul.setBackground(Color.black);
+                bmul.setForeground(Color.white);
                 bmul.setFont(opp);
+                
+                bdiv.setBackground(Color.black);
+                bdiv.setForeground(Color.white);
                 bdiv.setFont(opp);
+                
+                beq.setBackground(Color.black);
+                beq.setForeground(Color.white);
                 beq.setFont(opp);
                 
                 bdel.setBounds(60,380,100,40);
+                bdel.setBackground(Color.red);
+                bdel.setForeground(Color.white);
                 bdel.setFont(bt);
                 
 		bclr.setBounds(180,380,100,40);
+                bclr.setBackground(Color.red);
+                bclr.setForeground(Color.white);
                 bclr.setFont(bt);
                              
                 p=new JPanel(new GridLayout(4,4));
@@ -78,6 +129,7 @@ class calculator implements ActionListener
                 p2=new JPanel();
                 p2.setLayout(null);
                 p2.setBounds(-1,0,319,100);
+                p2.setBackground(Color.black);
                                  
                
 		p.add(b7);
@@ -230,7 +282,7 @@ class calculator implements ActionListener
                     {
                         JOptionPane.showMessageDialog(null,"Only two numbers at a time!");   
                     }
-               
+                    
 		} 
                 
                else if(e.getSource()==bsub)
